@@ -1,0 +1,94 @@
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    height: 175px;
+    width: 100%;
+    padding: 0px;    
+}
+
+.pageTitle {
+    display: inline;
+}
+
+.row { 
+    display: flex;
+    width: 100%
+}
+
+.row::after { 
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    border: 2px solid red;
+    padding: 15px;
+}
+
+
+h1, .question {
+    text-align: center;
+    display: block;
+    position: static;
+}
+
+h1 {
+    color: #C44900;
+    font-family: sans-serif;
+}
+
+
+html {
+    background-color: #04151F;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #C44900;
+    border: none;
+    border-radius: 10px;
+    color: #FCBF49;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    font-family: sans-serif
+}
+
+button:hover {
+    background-image: linear-gradient(#C44900,#ff9b60);
+    cursor: pointer;
+}
+
+button:active {
+    background-image: linear-gradient(#ff9b60,#C44900)
+}
+
+.background {
+    background-color: #FCBF49;
+    border: 5px solid #444;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
