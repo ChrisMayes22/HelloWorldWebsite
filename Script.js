@@ -1,16 +1,23 @@
-function findSolution(number) {
-    function search(start, history) {
-        if(start > number){
-            return null;
-        }
-        else if(start == number) {
-            return history;
-        }
-        else {
-            return search(start *3, "(" + history + "* 3)") || search(start +5, "(" + history + "+5)")
-        }
-    }
-    console.log(search(1,"1"));
+function rightAnswerOne() {
+   document.getElementById("answerSpaceOne").innerHTML = "That's right! Nice job."
 }
 
-findSolution(15);
+function wrongAnswerOne() {
+    document.getElementById("answerSpaceOne").innerHTML = "Nope. Remember, cos^2(x) + sin^2(x) = 1 !"
+}
+
+function rightAnswerTwo() {
+   document.getElementById("answerSpaceTwo").innerHTML = "That's right! Nice job."
+}
+
+function wrongAnswerTwo() {
+    document.getElementById("answerSpaceTwo").innerHTML = "Nope. Remember, the interior angles of a quadrilateral sum to 360!"
+}
+
+function rightAnswerThree() {
+   document.getElementById("answerSpaceThree").innerHTML = "That's right! Nice job."
+}
+
+function wrongAnswerThree() {
+    document.getElementById("answerSpaceThree").innerHTML = "Nope. Think about midpoints! What do we know about lines BC, EF, and AD?"
+}

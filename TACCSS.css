@@ -1,14 +1,47 @@
+html {
+    background-color: #04151F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.titleText {
+    display:inline;
+    font-size: 6vw;
+    text-align: center;
+}
+
+.titleImage {
+    float: left;
+}
+
 .header {
     margin-left: auto;
     margin-right: auto;
     height: 175px;
-    width: 100%;
-    padding: 0px;    
+    width: 100%; 
+    background-color: #0f4d71;
+    clear: none;
+    border: solid 2px;
+    border-color: #fff;
 }
 
-.pageTitle {
-    display: inline;
+.mainContents {
+    background-color: #fff;
+    border: 5px solid #34a4e5;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.quizImage {
+    width: 60%;
+    height: auto;
+}
+
+
 
 .row { 
     display: flex;
@@ -34,20 +67,27 @@
 .col-11 {width: 91.66%}
 .col-12 {width: 100%}
 
-* {
-    box-sizing: border-box;
-}
 
 [class*="col-"] {
-    border: 2px solid red;
+    border: 2px solid #fff;
     padding: 15px;
+    background-color: #0f4d71;
+    text-align: center;
+    font-size: 1.7vw;
+    padding: 0;
 }
 
 
-h1, .question {
-    text-align: center;
-    display: block;
-    position: static;
+
+a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:#156c9e; 
 }
 
 h1 {
@@ -56,8 +96,14 @@ h1 {
 }
 
 
-html {
-    background-color: #04151F;
+p {
+    color: #fff;
+}
+
+h1, .question {
+    text-align: center;
+    display: block;
+    position: static;
 }
 
 .buttons {
@@ -65,18 +111,19 @@ html {
 }
 
 button {
-    background-color: #C44900;
+    background-color: #34a4e5;
     border: none;
     border-radius: 10px;
-    color: #FCBF49;
+    color: #fff;
     width: 140px;
     height: 40px;
     text-align: center;
-    font-family: sans-serif
+    font-family: sans-serif;
+    margin-bottom: 4px;
 }
 
 button:hover {
-    background-image: linear-gradient(#C44900,#ff9b60);
+    background-color: #ff9b60;
     cursor: pointer;
 }
 
@@ -84,11 +131,13 @@ button:active {
     background-image: linear-gradient(#ff9b60,#C44900)
 }
 
-.background {
-    background-color: #FCBF49;
-    border: 5px solid #444;
-    height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+#answerSpaceOne, #answerSpaceTwo, #answerSpaceThree {
+    color: #ff9b60;
+    text-align: center;
+    font-family:cursive;
 }
+
+#currentPage{
+    background-color:#156c9e;
+}
+
