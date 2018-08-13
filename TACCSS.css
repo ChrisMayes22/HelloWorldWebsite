@@ -8,6 +8,7 @@ html {
 
 .titleText {
     display:inline;
+    font-family: serif;
     font-size: 6vw;
     text-align: center;
 }
@@ -35,13 +36,6 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-
-.quizImage {
-    width: 60%;
-    height: auto;
-}
-
-
 
 .row { 
     display: flex;
@@ -106,30 +100,73 @@ h1, .question {
     position: static;
 }
 
-.buttons {
+.quizImage {
+    width: 60%;
+    height: auto;
+}
+
+.buttonsContainer {
     text-align: center;
 }
 
-button {
+.questionButton {
     background-color: #34a4e5;
     border: none;
     border-radius: 10px;
     color: #fff;
-    width: 140px;
-    height: 40px;
+    width: 15%;
+    height: auto;
     text-align: center;
     font-family: sans-serif;
     margin-bottom: 4px;
+    padding: 1em;
 }
 
-button:hover {
+.questionButton:hover {
     background-color: #ff9b60;
     cursor: pointer;
 }
 
-button:active {
-    background-image: linear-gradient(#ff9b60,#C44900)
+.questionButton:active {
+    background-image: linear-gradient(#ff9b60,#C44900);
 }
+
+.navButton {
+    display: inline-block;
+    background-color: #0F4E71;
+    border-color: #fff;
+    border-style: solid;
+    color: #fff;
+    width: 32%;
+    height: auto;
+    margin: none;
+    padding: 1em;
+    font-size: 2vw;
+    font-family: serif;
+}
+
+.navButton:hover {
+    background-color: #177eb5;
+    cursor: pointer;
+}
+
+.navButton:active {
+    background-image: linear-gradient(#177eb5,#0F4E71);
+}
+
+.leftButton {
+    border-width: 2px 1px 2px 2px;
+}
+
+.middleButton {
+    border-width: 2px, 1px, 2px, 1px;
+}
+
+.rightButton {
+    border-width: 2px 2px 2px 1px;
+}
+
+
 
 #answerSpaceOne, #answerSpaceTwo, #answerSpaceThree {
     color: #ff9b60;
@@ -139,5 +176,17 @@ button:active {
 
 #currentPage{
     background-color:#156c9e;
+}
+
+#questionOne {
+    display: block;
+}
+
+#questionTwo {
+    display: none;
+}
+
+#questionThree {
+    display: none;
 }
 

@@ -10,39 +10,85 @@
         <p class ="titleText">Triangle Academic Coach</p>
     </div>
 <br>
-    <div class="mainContents">
-        <br>
-        <br>
-        <div class ="question">
-             <img src = "TrigQuestion.png" class = "quizImage">
+    <div id="questionOne">
+        <div class="mainContents">
+            <br>
+            <br>
+                <div class ="question">
+                     <img src = "trigQuestion.png" class = "quizImage">
+                </div>
+                <br>
+                <p id="answerSpaceOne"></p>
+                <br>        
+                <div class=buttonsContainer>
+                    <button onclick="wrongAnswerOne()" class="questionButton"><strong>1</strong></button>
+                    <button onclick="rightAnswer()" class="questionButton"><strong>2</strong></button>
+                    <button  onclick="wrongAnswerOne()" class="questionButton"><strong>tan(2x)</strong></button>
+                    <button onclick="wrongAnswerOne()" class="questionButton"><strong>cot(2x)</strong></button>
+                </div>
+            <br>
         </div>
         <br>
-        <p id="answerSpaceOne"></p>
-        <br>        
-        <div class = "buttons">
-            <button onclick="wrongAnswerOne()"><strong>1</strong></button>
-            <button onclick="rightAnswerOne()"><strong>2</strong></button>
-            <button  onclick="wrongAnswerOne()"><strong>tan(2x)</strong></button>
-            <button onclick="wrongAnswerOne()"><strong>cot(2x)</strong></button>
+        <div class = "buttonsContainer">
+            <button onclick="getQuestionOne()" class = "navButton leftButton">Question 1</button><!--remove carriage returns whitespace w/ comment
+            --><button onclick="getQuestionTwo()" class = "navButton middleButton">Question 2</button><!--
+            --><button onclick="getQuestionThree()" class = "navButton rightButton">Question 3</button>
         </div>
+        <br>
         <br>
     </div>
-    <br>
-    <div class = "row">
-        <div class = "col-4" id="currentPage">
-            <p>QUESTION 1</p>
+    <div id="questionTwo">
+        <div class="mainContents">
+            <br>
+            <br>
+            <div class ="question">
+                <img src="parallelogramQuestion.png" class = "quizImage">
+            </div>
+            <br>
+            <p id="answerSpaceTwo"></p>
+            <br>
+            <div class = "buttonsContainer">
+                <button onclick="rightAnswerTwo()" class="questionButton"><strong>100</strong></button>
+                <button onclick="wrongAnswerTwo()" class="questionButton"><strong>22.5</strong></button>
+                <button  onclick="wrongAnswerTwo()" class="questionButton"><strong>80</strong></button>
+                <button onclick="wrongAnswerTwo()" class="questionButton"><strong>145</strong></button>
+            </div>
+            <br>
         </div>
-        <div class = "col-4">
-        <a href="QuestionTwo.html">
-             <p>QUESTION 2</p>
-         </a>
+        <br>
+        <div class = "buttonsContainer">
+            <button onclick="getQuestionOne()" class = "navButton leftButton">Question 1</button><!--remove carriage returns whitespace w/ comment
+            --><button onclick="getQuestionTwo()" class = "navButton middleButton">Question 2</button><!--
+            --><button onclick="getQuestionThree()" class = "navButton rightButton">Question 3</button>
         </div>
-         <div class = "col-4">
-             <a href="QuestionThree.html">
-                 <p>QUESTION 3</p>
-             </a>
-        </div>
+        <br>
+        <br>
     </div>
+    <div id="questionThree">
+        <div class="mainContents">
+            <br>
+            <br>
+            <div class ="question">
+                <img src="trapezoidQuestion.png" class="quizImage">
+            </div>
+            <br>
+            <p id="answerSpaceThree"></p>
+            <br>
+            <div class = "buttonsContainer">
+                <button onclick="wrongAnswerThree()" class="questionButton"><strong>31</strong></button>
+                <button onclick="wrongAnswerThree()" class="questionButton"><strong>38</strong></button>
+                <button  onclick="wrongAnswerThree()" class="questionButton"><strong>43.5</strong></button>
+                <button onclick="rightAnswerThree()" class="questionButton"><strong>31.5</strong></button>
+            </div>
+            <br>
+        </div>
+    <br>
+        <div class = "buttonsContainer">
+            <button onclick="getQuestionOne()" class = "navButton leftButton">Question 1</button><!--remove carriage returns whitespace w/ comment
+            --><button onclick="getQuestionTwo()" class = "navButton middleButton">Question 2</button><!--
+            --><button onclick="getQuestionThree()" class = "navButton rightButton">Question 3</button>
+        </div>
     <br>
     <br>
+    </div>
 </body>

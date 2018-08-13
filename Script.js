@@ -1,23 +1,50 @@
-function rightAnswerOne() {
-   document.getElementById("answerSpaceOne").innerHTML = "That's right! Nice job."
-}
-
-function wrongAnswerOne() {
-    document.getElementById("answerSpaceOne").innerHTML = "Nope. Remember, cos^2(x) + sin^2(x) = 1 !"
+function rightAnswer() {
+    "use strict";
+   document.getElementById("answerSpaceOne").innerHTML = "That's right! Nice job.";
 }
 
 function rightAnswerTwo() {
-   document.getElementById("answerSpaceTwo").innerHTML = "That's right! Nice job."
-}
-
-function wrongAnswerTwo() {
-    document.getElementById("answerSpaceTwo").innerHTML = "Nope. Remember, the interior angles of a quadrilateral sum to 360!"
+    "use strict";
+   document.getElementById("answerSpaceTwo").innerHTML = "That's right! Nice job.";
 }
 
 function rightAnswerThree() {
-   document.getElementById("answerSpaceThree").innerHTML = "That's right! Nice job."
+    "use strict";
+   document.getElementById("answerSpaceThree").innerHTML = "That's right! Nice job.";
+}
+
+function wrongAnswerOne() {
+    "use strict";
+    document.getElementById("answerSpaceOne").innerHTML = "Nope. Remember, cos^2(x) + sin^2(x) = 1 !";
+}
+
+function wrongAnswerTwo() {
+    "use strict";
+    document.getElementById("answerSpaceTwo").innerHTML = "Nope. Remember, the interior angles of a quadrilateral sum to 360!";
 }
 
 function wrongAnswerThree() {
-    document.getElementById("answerSpaceThree").innerHTML = "Nope. Think about midpoints! What do we know about lines BC, EF, and AD?"
+    "use strict";
+    document.getElementById("answerSpaceThree").innerHTML = "Nope. Think about midpoints! What do we know about lines BC, EF, and AD?";
+}
+
+function getQuestionOne() {
+    "use strict";
+    document.getElementById("questionOne").style.display = "block";
+    document.getElementById("questionTwo").style.display = "none";
+    document.getElementById("questionThree").style.display = "none";
+}
+
+function getQuestionTwo() {
+    "use strict";
+    document.getElementById("questionOne").style.display = "none";
+    document.getElementById("questionTwo").style.display = "block";
+    document.getElementById("questionThree").style.display = "none";
+}
+
+function getQuestionThree() {
+    "use strict";
+    document.getElementById("questionOne").style.display = "none";
+    document.getElementById("questionTwo").style.display = "none";
+    document.getElementById("questionThree").style.display = "block";
 }
